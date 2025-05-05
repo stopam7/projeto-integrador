@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Língua Inglesa - Título</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inglês - Problemas de Pronúncia</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header>
     <nav>
@@ -21,16 +23,104 @@
         <li><a href="matematica.html">Matemática</a></li>
       </ul>
     </nav>
-    <h1>Língua Inglesa</h1>
-    <p>Título</p>
+    <h1>Inglês</h1>
+    <p>Problemas de Pronúncia</p>
   </header>
 
   <main>
-    <!-- conteudo aqui -->
+    <!-- PARTE 1 - TEXTO -->
+    <section id="parte1">
+      <h2>Texto: Problemas de Pronúncia no Inglês</h2>
+
+      <section>
+        <h3>A Diferença Entre o Som /θ/ e /ð/</h3>
+        <p>No inglês, há dois sons fricativos representados pela combinação "th", que não possuem equivalentes diretos
+          em muitas línguas românicas, como o português. Esses sons são desafiadores para quem está aprendendo o idioma.
+        </p>
+
+        <h4>/θ/ - Som Surdo</h4>
+        <p>Esse som é produzido quando o ar passa entre a língua e os dentes superiores. Ele é surdo, ou seja, não há
+          vibração das cordas vocais. Exemplos: <strong>think</strong>, <strong>thanks</strong>, <strong>teeth</strong>.
+        </p>
+
+        <h4>/ð/ - Som Sonoro</h4>
+        <p>Ao contrário de /θ/, o som /ð/ é sonoro, com vibração das cordas vocais. Ele também é produzido com a língua
+          entre os dentes, mas com um som mais "pesado". Exemplos: <strong>this</strong>, <strong>that</strong>,
+          <strong>mother</strong>.</p>
+
+        <p>Para falantes de português, a dificuldade ocorre porque não há uma distinção clara entre esses sons. Por
+          exemplo, "think" pode ser pronunciado como "tink" e "this" como "dis".</p>
+      </section>
+
+      <section>
+        <h3>O Som da Vogal /æ/</h3>
+        <p>Outro desafio comum no inglês é a vogal /æ/, que aparece em palavras como "cat" e "bad". Esse som não possui
+          um equivalente direto no português, o que dificulta sua pronúncia correta.</p>
+        <p>O som /æ/ é produzido com a boca aberta e a língua posicionada mais para frente na boca. Ele é mais próximo
+          do som de "é" aberto, mas centralizado, e não deve ser confundido com o "a" de "pá" ou "carro".</p>
+        <p>Exemplos: <strong>cat</strong>, <strong>bad</strong>, <strong>hand</strong>.</p>
+        <p>Pronúncia incorreta: "cat" pronunciado como "ket".</p>
+      </section>
+
+      <section>
+        <h3>Conclusão</h3>
+        <p>A pronúncia correta em inglês é fundamental para uma comunicação eficaz. Entender as dificuldades específicas
+          e praticar os sons /θ/, /ð/ e /æ/ pode melhorar significativamente a clareza da fala. Com a prática contínua,
+          a pronúncia em inglês pode ser aprimorada e a fluência aumentada.</p>
+      </section>
+    </section>
+
+    <section id="podcast">
+      <h2>Podcast sobre Pronúncia no Inglês</h2>
+      <p>Ouça nosso podcast especial apresentando uma discussão sobre os desafios da pronúncia em inglês e mostrando a pronúncia certa.</p>
+
+      <audio controls>
+        <source src="PodcastFisica.mpeg" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+    </section>
+
+    <!-- Jogo/Quiz Interativo -->
+    <section id="quiz">
+      <h2>Teste sua Pronúncia com o Quiz!</h2>
+      <p>Responda às perguntas abaixo para testar seus conhecimentos sobre os sons em inglês.</p>
+
+      <form id="quiz-form">
+        <!-- Pergunta 1 -->
+        <div class="question">
+          <p><strong>1. Qual é a pronúncia correta da palavra "think"?</strong></p>
+          <label><input type="radio" name="q1" value="a"> /θɪŋk/ (som /θ/)</label><br>
+          <label><input type="radio" name="q1" value="b"> /ðɪŋk/ (som /ð/)</label><br>
+          <label><input type="radio" name="q1" value="c"> /tɪŋk/ (som /t/)</label>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question">
+          <p><strong>2. Qual é a pronúncia correta da palavra "this"?</strong></p>
+          <label><input type="radio" name="q2" value="a"> /θɪs/ (som /θ/)</label><br>
+          <label><input type="radio" name="q2" value="b"> /ðɪs/ (som /ð/)</label><br>
+          <label><input type="radio" name="q2" value="c"> /dɪs/ (som /d/)</label>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question">
+          <p><strong>3. Qual é a pronúncia correta da palavra "cat"?</strong></p>
+          <label><input type="radio" name="q3" value="a"> /kæt/ (som /æ/)</label><br>
+          <label><input type="radio" name="q3" value="b"> /kɛt/ (som /e/)</label><br>
+          <label><input type="radio" name="q3" value="c"> /kɑt/ (som /a/)</label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Verificar Respostas</button>
+      </form>
+
+      <div id="result"></div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 - Trabalho integrador SESI e SENAI</p>
+    <p>&copy; 2025 - Trabalho escolar desenvolvido para a disciplina de Língua Inglesa</p>
   </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
